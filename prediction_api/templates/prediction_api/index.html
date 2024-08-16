@@ -1,0 +1,13 @@
+<h1>Prédiction de la radiation</h1>
+<form method="post" action="{% url 'predict'%}">
+    <label for="year">Entrez l'année :</label>
+    <input type="number" id="year" name="year" min="2021" required> <br> <br>
+
+    <label for="month">Entrez le mois :</label>
+    <input type="number" id="month" name="month" min="01" max="12" required> <br> <br>
+
+    <label for="day">Entrez le jour :</label> 
+    <input type="number" id="day" name="day" min=1 max=31 required> <br> <br>
+
+    <button type="submit">Prédire</button>
+</form>
